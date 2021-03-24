@@ -1,10 +1,11 @@
-import "./styles.css";
+import './styles.css';
+import Card from './components/CardComponent/Main/Card';
 
 export default function App() {
   return (
-    <div className="App">
-     
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <>
+      <Card />
+      {/* <footer>created by Sukhpreet Singh - devChallenges.io</footer> */}
+    </>
   );
 }
