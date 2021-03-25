@@ -1,11 +1,19 @@
+import { Descriptions } from './DescriptionElements';
+import { AiFillStar } from 'react-icons/ai';
+
 const Description = () => {
   return (
     <>
       <div>
-        <p>SUPER HOST</p>
-        <p>Entire Apartment.</p>
-        <p>2 Beds</p>
-        <p>4.40</p>
+        <Descriptions>
+          <p>SUPER HOST</p>
+          <p>Entire Apartment.</p>
+          <p>2 Beds</p>
+          <p>
+            <AiFillStar />
+            4.40
+          </p>
+        </Descriptions>
       </div>
     </>
   );
