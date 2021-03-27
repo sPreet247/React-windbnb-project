@@ -31,4 +31,10 @@ export const Ratings = styled(TypeHost)`
   color: #4f4f4f;
 `;
 
-export const Title = styled.div``;
+export const Title = styled(TypeHost)`
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-align: right;
+  color: #333333;
+`;
