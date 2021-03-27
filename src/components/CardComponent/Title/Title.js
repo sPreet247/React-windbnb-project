@@ -2,7 +2,7 @@ const Title = () => {
   return (
     <>
       <div>
-        <h2>"Stylist apartment in center of the city"</h2>
+        <h2>"Arty interior in 1900 wooden house"</h2>
       </div>
     </>
   );

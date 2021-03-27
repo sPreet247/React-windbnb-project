@@ -7,11 +7,11 @@ const Description = () => {
       <div>
         <Descriptions>
           <p>SUPER HOST</p>
-          <p>Entire Apartment.</p>
-          <p>2 Beds</p>
+          <p>Entire house.</p>
+          <p>6 Beds</p>
           <p>
             <AiFillStar />
-            4.40
+            4.5
           </p>
         </Descriptions>
       </div>
