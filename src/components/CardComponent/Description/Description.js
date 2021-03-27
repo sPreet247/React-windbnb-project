@@ -1,4 +1,10 @@
-import { Descriptions } from './DescriptionElements';
+import {
+  Descriptions,
+  SuperHost,
+  TypeHost,
+  NumBeds,
+  Ratings,
+} from './DescriptionElements';
 import { AiFillStar } from 'react-icons/ai';
 
 const Description = () => {
@@ -6,13 +12,13 @@ const Description = () => {
     <>
       <div>
         <Descriptions>
-          <p>SUPER HOST</p>
-          <p>Entire house.</p>
-          <p>6 Beds</p>
-          <p>
+          <SuperHost>SUPER HOST</SuperHost>
+          <TypeHost>Entire house.</TypeHost>
+          <NumBeds>6 Beds</NumBeds>
+          <Ratings>
             <AiFillStar />
             4.5
-          </p>
+          </Ratings>
         </Descriptions>
       </div>
     </>
