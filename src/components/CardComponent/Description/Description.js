@@ -20,7 +20,7 @@ const Description = () => {
             <TypeHost>Entire house. 6 Beds</TypeHost>
 
             <Ratings>
-              <AiFillStar />
+              <AiFillStar style={{ color: 'red' }} />
               4.5
             </Ratings>
           </Wrapper>
