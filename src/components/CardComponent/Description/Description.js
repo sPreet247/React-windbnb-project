@@ -8,6 +8,7 @@ import {
   Images,
 } from './DescriptionElements';
 import { AiFillStar } from 'react-icons/ai';
+// import Data from '../Data/Data.json';
 
 const Description = (props) => {
   return (
