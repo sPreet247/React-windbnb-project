@@ -5,26 +5,28 @@ import {
   Ratings,
   Title,
   Wrapper,
+  Images,
 } from './DescriptionElements';
 import { AiFillStar } from 'react-icons/ai';
-import Image from '../ImageComponent/Image';
 
-const Description = () => {
+const Description = (props) => {
   return (
     <>
       <div>
         <Descriptions>
-          <Image />
+          <Images src={props.photo} alt={props.type} />
           <Wrapper>
             <SuperHost>SUPER HOST</SuperHost>
-            <TypeHost>Entire house. 6 Beds</TypeHost>
+            <TypeHost>
+              {props.type}. {props.beds} Beds
+            </TypeHost>
 
             <Ratings>
               <AiFillStar style={{ color: 'red' }} />
-              4.5
+              {props.ratings}
             </Ratings>
           </Wrapper>
-          <Title>Arty interior in 1900 wooden house</Title>
+          <Title>{props.title}</Title>
         </Descriptions>
       </div>
     </>
