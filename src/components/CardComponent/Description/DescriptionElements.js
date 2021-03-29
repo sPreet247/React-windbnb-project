@@ -2,13 +2,15 @@ import styled from 'styled-components';
 
 export const Descriptions = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 7rem;
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
+
   margin-bottom: 0.75rem;
   min-height: 1.813rem;
 `;
@@ -39,10 +41,9 @@ export const TypeHost = styled.div`
 `;
 
 export const Ratings = styled(TypeHost)`
-  margin-left: 5rem;
+  font-weight: 500;
   display: flex;
   align-items: center;
-
   color: #4f4f4f;
 `;
 
