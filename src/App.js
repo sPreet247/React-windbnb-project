@@ -5,7 +5,7 @@ export default function App() {
   return (
     <>
       <Card />
-      {/* <footer>created by Sukhpreet Singh - devChallenges.io</footer> */}
+      <footer>created by Sukhpreet Singh - devChallenges.io</footer>
     </>
   );
 }
