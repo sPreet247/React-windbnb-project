@@ -1,5 +1,9 @@
 const Logo = () => {
-  return <></>;
+  return (
+    <>
+      <img src="/assets/triangleLogo.png" alt="Logo" />
+    </>
+  );
 };
 
 export default Logo;
