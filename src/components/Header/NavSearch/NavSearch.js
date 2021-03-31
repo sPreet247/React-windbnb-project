@@ -6,7 +6,7 @@ const NavSearch = () => {
   return (
     <>
       <Input placeholder="Select location" />
-      <Input placeholder="Add Guests" />
+      <Input placeholder="Add Guests" readonly />
       <MdSearch />
     </>
   );
