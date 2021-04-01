@@ -1,13 +1,19 @@
 import { MdSearch } from 'react-icons/md';
 
-import { Input } from './NavSearchElements';
+import { Button, Font } from './NavSearchElements';
 
 const NavSearch = () => {
   return (
     <>
-      <Input placeholder="Select location" />
-      <Input placeholder="Add Guests" readonly />
-      <MdSearch />
+      <Button>
+        <Font>Select Location</Font>
+      </Button>
+      <Button>
+        <Font>Add guests</Font>
+      </Button>
+      <Button>
+        <MdSearch />
+      </Button>
     </>
   );
 };
