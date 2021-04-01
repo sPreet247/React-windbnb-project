@@ -5,14 +5,15 @@ import { Button, Font } from './NavSearchElements';
 const NavSearch = () => {
   return (
     <>
-      <Button>
+      <Button noRightBorder>
         <Font>Select Location</Font>
       </Button>
-      <Button>
+
+      <Button noBorder>
         <Font>Add guests</Font>
       </Button>
-      <Button>
-        <MdSearch />
+      <Button noLeftBorder>
+        <MdSearch size={40} style={{ color: '#EB5757' }} />
       </Button>
     </>
   );
