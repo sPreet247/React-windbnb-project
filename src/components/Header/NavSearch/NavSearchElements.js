@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
 export const Button = styled.button`
-
-  padding: 0.6rem;
+  
+  padding: 1rem;
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;

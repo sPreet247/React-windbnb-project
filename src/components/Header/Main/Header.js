@@ -5,8 +5,8 @@ import { Wrapper } from './HeaderElements';
 const Header = () => {
   return (
     <>
-      <Logo />
       <Wrapper>
+        <Logo />
         <NavSearch />
       </Wrapper>
     </>
