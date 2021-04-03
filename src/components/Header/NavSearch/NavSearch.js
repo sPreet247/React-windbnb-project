@@ -1,22 +1,20 @@
 import { MdSearch } from 'react-icons/md';
 
-import { Button, Font } from './NavSearchElements';
+import { Button, Font, Nav } from './NavSearchElements';
 
 const NavSearch = () => {
   return (
     <>
-      <nav>
-        <Button noRightBorder>
+      <Nav>
+        <Button>
           <Font>Select Location</Font>
-        </Button>
 
-        <Button noBorder>
           <Font>Add guests</Font>
+          <Font>
+            <MdSearch size={35} style={{ color: '#EB5757' }} />
+          </Font>
         </Button>
-        <Button noLeftBorder>
-          <MdSearch size={40} style={{ color: '#EB5757' }} />
-        </Button>
-      </nav>
+      </Nav>
     </>
   );
 };

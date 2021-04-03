@@ -1,31 +1,19 @@
 import styled, { css } from 'styled-components';
 
+export const Nav = styled.nav``;
+
 export const Button = styled.button`
-  
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   cursor: pointer;
-  outline: none;
-
-  ${(props) =>
-    props.noBorder &&
-    css`
-      border-radius: 0;
-    `}
-    ${(props) =>
-      props.noLeftBorder &&
-      css`
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-      `}
-    ${(props) =>
-      props.noRightBorder &&
-      css`
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-      `}
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 export const Font = styled.h4`
@@ -34,6 +22,7 @@ export const Font = styled.h4`
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.125rem;
-
+  padding: 1rem;
   color: #bdbdbd;
+  border-right: 1px solid #f2f2f2;
 `;
