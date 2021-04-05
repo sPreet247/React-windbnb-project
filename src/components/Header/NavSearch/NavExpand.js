@@ -1,6 +1,17 @@
-import { MdSearch } from 'react-icons/md';
+import { MdSearch, MdPlace } from 'react-icons/md';
 
-import { Button, Font, Nav, Location } from './NavExpandElements';
+import {
+  Button,
+  Font,
+  Nav,
+  Location,
+  SearchEx,
+  AddGuest,
+  TopNavText,
+  SearchText,
+} from './NavExpandElements';
+
+import StayData from '../../../Data/Data.json';
 
 const NavExpand = () => {
   return (
@@ -8,17 +19,20 @@ const NavExpand = () => {
       <Nav>
         <Button>
           <Location>
+            <TopNavText>Location</TopNavText>
             <Font>Select Location</Font>
           </Location>
 
-          <div>
+          <AddGuest>
+            <TopNavText>Guests</TopNavText>
             <Font>Add guests</Font>
-          </div>
-          <div>
+          </AddGuest>
+          <SearchEx>
             <Font>
-              <MdSearch size={35} style={{ color: '#EB5757' }} />
+              <MdSearch size={35} style={{ color: '#ffffff' }} />
+              <SearchText>Search</SearchText>
             </Font>
-          </div>
+          </SearchEx>
         </Button>
       </Nav>
     </>
