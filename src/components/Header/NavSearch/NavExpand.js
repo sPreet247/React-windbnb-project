@@ -1,15 +1,15 @@
 import { MdSearch } from 'react-icons/md';
 
-import { Button, Font, Nav } from './NavSearchElements';
+import { Button, Font, Nav, Location } from './NavExpandElements';
 
-const NavSearch = () => {
+const NavExpand = () => {
   return (
     <>
       <Nav>
         <Button>
-          <div>
+          <Location>
             <Font>Select Location</Font>
-          </div>
+          </Location>
 
           <div>
             <Font>Add guests</Font>
@@ -25,4 +25,4 @@ const NavSearch = () => {
   );
 };
 
-export default NavSearch;
+export default NavExpand;
