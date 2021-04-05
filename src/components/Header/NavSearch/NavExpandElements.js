@@ -5,6 +5,7 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 `;
 
 export const Button = styled.button`
@@ -20,10 +21,12 @@ export const Button = styled.button`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  
 `;
 
 export const Location = styled.div`
   width: 50%;
+  
 `;
 
 export const AddGuest = styled.div`
