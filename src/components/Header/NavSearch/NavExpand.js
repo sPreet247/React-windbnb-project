@@ -15,12 +15,12 @@ import {
 import StayData from '../../../Data/Data.json';
 
 const NavExpand = () => {
-  const cities = [
-    'Helsinki, Finland',
-    'Turku, Finland',
-    'Oulu, Finland',
-    'Vaasa, Finland',
-  ];
+  // const cities = [
+  //   'Helsinki, Finland',
+  //   'Turku, Finland',
+  //   'Oulu, Finland',
+  //   'Vaasa, Finland',
+  // ];
 
   return (
     <Wrapper>
