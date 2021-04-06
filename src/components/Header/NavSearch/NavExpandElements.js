@@ -1,14 +1,23 @@
 import styled from 'styled-components';
 
+export const Wrapper = styled.div`
+  background: rgba(0, 0, 0, 0.75);
+
+  z-index: 1;
+  height: 100%;
+`;
+
 export const Nav = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
-
+  padding: 2rem 0;
+  margin-bottom: 2rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #ffffff;
 `;
 
 export const Button = styled.button`

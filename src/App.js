@@ -5,9 +5,11 @@ import Header from './components/Header/Main/Header';
 export default function App() {
   return (
     <>
-      <Header />
-      <Card />
-      <footer>created by Sukhpreet Singh - devChallenges.io</footer>
+      <div>
+        <Header />
+        <Card />
+        <footer>created by Sukhpreet Singh - devChallenges.io</footer>
+      </div>
     </>
   );
 }

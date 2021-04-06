@@ -9,6 +9,7 @@ import {
   AddGuest,
   TopNavText,
   SearchText,
+  Wrapper,
 } from './NavExpandElements';
 
 import StayData from '../../../Data/Data.json';
@@ -22,7 +23,7 @@ const NavExpand = () => {
   ];
 
   return (
-    <>
+    <Wrapper>
       <Nav>
         <Button>
           <Location>
@@ -42,7 +43,7 @@ const NavExpand = () => {
           </SearchEx>
         </Button>
       </Nav>
-    </>
+    </Wrapper>
   );
 };
 
