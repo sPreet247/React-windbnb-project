@@ -1,12 +1,16 @@
+import { useState } from 'react';
 import { MdSearch } from 'react-icons/md';
 
 import { Button, Font, Nav } from './NavSearchElements';
 
 const NavSearch = () => {
+  const [navExpand, setNavExpand] = useState(false);
+  const handleClick = () => {};
+
   return (
     <>
       <Nav>
-        <Button>
+        <Button onClick={() => handleClick()}>
           <div>
             <Font>Select Location</Font>
           </div>
