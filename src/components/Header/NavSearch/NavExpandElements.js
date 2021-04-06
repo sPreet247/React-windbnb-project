@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
+  position: fixed;
+  top: 0;
+  left: 0;
+
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
- 
 `;
 
 export const Button = styled.button`
@@ -21,12 +24,10 @@ export const Button = styled.button`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  
 `;
 
 export const Location = styled.div`
   width: 50%;
-  
 `;
 
 export const AddGuest = styled.div`
