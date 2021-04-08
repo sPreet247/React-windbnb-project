@@ -5,17 +5,20 @@ import NavExpand from './NavExpand';
 
 const NavSearch = () => {
   const [navExpand, setNavExpand] = useState(false);
+  const handleClick = () => {
+    setNavExpand(!navExpand);
+  };
 
   return (
     <>
       <Nav>
-        {navExpand && <NavExpand />}
+        {navExpand ? <NavExpand /> : null}
         <Button>
-          <div onClick={() => setNavExpand(!navExpand)}>
+          <div onClick={() => handleClick()}>
             <Font>Select Location</Font>
           </div>
 
-          <div onClick={() => setNavExpand(!navExpand)}>
+          <div onClick={() => handleClick()}>
             <Font>Add guests</Font>
           </div>
           <div>
