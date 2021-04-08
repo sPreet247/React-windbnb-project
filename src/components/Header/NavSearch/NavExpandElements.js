@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-  background: rgba(0, 0, 0, 0.75);
-
-  z-index: 1;
-  height: 100%;
-`;
+export const Wrapper = styled.div``;
 
 export const Nav = styled.nav`
   position: fixed;

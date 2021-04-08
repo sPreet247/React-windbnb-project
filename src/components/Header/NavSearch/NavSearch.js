@@ -9,13 +9,13 @@ const NavSearch = () => {
   return (
     <>
       <Nav>
-        {navExpand ? <NavExpand /> : null}
-        <Button onClick={() => setNavExpand(!navExpand)}>
-          <div>
+        {navExpand && <NavExpand />}
+        <Button>
+          <div onClick={() => setNavExpand(!navExpand)}>
             <Font>Select Location</Font>
           </div>
 
-          <div>
+          <div onClick={() => setNavExpand(!navExpand)}>
             <Font>Add guests</Font>
           </div>
           <div>

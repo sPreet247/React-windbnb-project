@@ -12,16 +12,7 @@ import {
   Wrapper,
 } from './NavExpandElements';
 
-import StayData from '../../../Data/Data.json';
-
 const NavExpand = () => {
-  // const cities = [
-  //   'Helsinki, Finland',
-  //   'Turku, Finland',
-  //   'Oulu, Finland',
-  //   'Vaasa, Finland',
-  // ];
-
   return (
     <Wrapper>
       <Nav>
@@ -35,12 +26,14 @@ const NavExpand = () => {
             <TopNavText>Guests</TopNavText>
             <Font>Add guests</Font>
           </AddGuest>
-          <SearchEx>
-            <Font>
-              <MdSearch size={35} style={{ color: '#ffffff' }} />
-              <SearchText>Search</SearchText>
-            </Font>
-          </SearchEx>
+          <div>
+            <SearchEx>
+              <Font>
+                <MdSearch size={35} style={{ color: '#ffffff' }} />
+                <SearchText>Search</SearchText>
+              </Font>
+            </SearchEx>
+          </div>
         </Button>
       </Nav>
     </Wrapper>

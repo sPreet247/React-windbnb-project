@@ -4,7 +4,6 @@ export const Descriptions = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 7rem;
 `;
 
 export const Wrapper = styled.div`
@@ -52,7 +51,7 @@ export const Title = styled(TypeHost)`
   font-size: 1rem;
   line-height: 1.25rem;
   color: #333333;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 `;
 
 export const Images = styled.img`
