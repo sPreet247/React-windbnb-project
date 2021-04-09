@@ -1,24 +1,17 @@
 import { MdSearch } from 'react-icons/md';
-import { useState } from 'react';
+
 import { Button, Font, Nav } from './NavSearchElements';
-import NavExpand from './NavExpand';
 
 const NavSearch = () => {
-  const [navExpand, setNavExpand] = useState(false);
-  const handleClick = () => {
-    setNavExpand(!navExpand);
-  };
-
   return (
     <>
       <Nav>
-        {navExpand ? <NavExpand /> : null}
         <Button>
-          <div onClick={() => handleClick()}>
+          <div>
             <Font>Select Location</Font>
           </div>
 
-          <div onClick={() => handleClick()}>
+          <div>
             <Font>Add guests</Font>
           </div>
           <div>
