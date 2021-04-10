@@ -1,8 +1,14 @@
 import { MdSearch } from 'react-icons/md';
-
+import { useEffect, useState } from 'react';
 import { Button, Font, Nav } from './NavSearchElements';
 
 const NavSearch = () => {
+  const [navExpand, setNavExpand] = useState(false);
+  const Toggle = () => {
+    setNavExpand(!navExpand);
+  };
+
+  useEffect(() => {}, []);
   return (
     <>
       <Nav>
