@@ -1,7 +1,7 @@
 import { MdSearch } from 'react-icons/md';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Button, Font, Nav } from './NavSearchElements';
-import NavExpand from './NavExpand';
+
 import {
   Wrapper,
   Location,
