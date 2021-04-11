@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div``;
 
-export const Nav = styled.nav`
+export const Nav1 = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +15,7 @@ export const Nav = styled.nav`
   background: #ffffff;
 `;
 
-export const Button = styled.button`
+export const Button1 = styled.button`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +55,7 @@ export const TopNavText = styled.div`
   text-overflow: ellipsis;
 `;
 
-export const Font = styled.h4`
+export const Font1 = styled.h4`
   display: flex;
   align-items: center;
   justify-content: center;
