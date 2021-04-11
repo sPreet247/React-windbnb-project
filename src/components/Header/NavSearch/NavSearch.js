@@ -1,18 +1,16 @@
 import { MdSearch } from 'react-icons/md';
 import { useState } from 'react';
-import { Button, Font, Nav } from './NavSearchElements';
-
 import {
+  Button,
+  Font,
+  Nav,
   Wrapper,
   Location,
   TopNavText,
   AddGuest,
   SearchEx,
   SearchText,
-  Font1,
-  Nav1,
-  Button1,
-} from './NavExpandElements';
+} from './NavSearchElements';
 
 const NavSearch = () => {
   const [navExpand, setNavExpand] = useState(false);
@@ -24,27 +22,27 @@ const NavSearch = () => {
     <>
       {navExpand ? (
         <Wrapper>
-          <Nav1>
-            <Button1>
+          <Nav expand>
+            <Button expandBtn>
               <Location>
                 <TopNavText>Location</TopNavText>
-                <Font1>Select Location</Font1>
+                <Font expandFont>Select Location</Font>
               </Location>
 
               <AddGuest>
                 <TopNavText>Guests</TopNavText>
-                <Font1>Add guests</Font1>
+                <Font expandFont>Add guests</Font>
               </AddGuest>
               <div>
                 <SearchEx onClick={Toggle}>
-                  <Font1>
+                  <Font expandFont>
                     <MdSearch size={35} style={{ color: '#ffffff' }} />
                     <SearchText>Search</SearchText>
-                  </Font1>
+                  </Font>
                 </SearchEx>
               </div>
-            </Button1>
-          </Nav1>
+            </Button>
+          </Nav>
         </Wrapper>
       ) : (
         <Nav>
