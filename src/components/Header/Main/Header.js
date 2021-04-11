@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       <Wrapper>
-        {/* <Logo /> */}
+        <Logo />
         <NavSearch />
       </Wrapper>
     </>

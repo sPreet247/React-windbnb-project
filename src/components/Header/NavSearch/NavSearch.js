@@ -12,7 +12,7 @@ import {
   SearchText,
 } from './NavSearchElements';
 
-const NavSearch = () => {
+function NavSearch() {
   const [navExpand, setNavExpand] = useState(false);
   const Toggle = () => {
     setNavExpand(!navExpand);
@@ -64,6 +64,6 @@ const NavSearch = () => {
       )}
     </>
   );
-};
+}
 
 export default NavSearch;
