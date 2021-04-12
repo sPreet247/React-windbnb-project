@@ -12,6 +12,8 @@ import {
   SearchText,
 } from './NavSearchElements';
 
+import LocationDropdown from '../LocationDropdown/LocationDropdown';
+
 function NavSearch() {
   const [navExpand, setNavExpand] = useState(false);
   const Toggle = () => {
@@ -24,15 +26,19 @@ function NavSearch() {
         <Wrapper>
           <Nav expand>
             <Button expandBtn>
-              <Location>
-                <TopNavText>Location</TopNavText>
-                <Font expandFont>Select Location</Font>
-              </Location>
-
-              <AddGuest>
-                <TopNavText>Guests</TopNavText>
-                <Font expandFont>Add guests</Font>
-              </AddGuest>
+              <div>
+                <Location>
+                  <TopNavText>Location</TopNavText>
+                  <Font expandFont>Select Location</Font>
+                </Location>
+              </div>
+              <LocationDropdown />
+              <div>
+                <AddGuest>
+                  <TopNavText>Guests</TopNavText>
+                  <Font expandFont>Add guests</Font>
+                </AddGuest>
+              </div>
               <div>
                 <SearchEx onClick={Toggle}>
                   <Font expandFont>
@@ -46,12 +52,12 @@ function NavSearch() {
         </Wrapper>
       ) : (
         <Nav>
-          <Button onClick={Toggle}>
-            <div>
+          <Button>
+            <div onClick={Toggle}>
               <Font>Select Location</Font>
             </div>
 
-            <div>
+            <div onClick={Toggle}>
               <Font>Add guests</Font>
             </div>
             <div>
