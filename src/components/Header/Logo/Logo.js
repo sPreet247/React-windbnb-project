@@ -1,5 +1,5 @@
 import logo from '../../../../assets/logo.svg';
-import { LogoImg } from './LogoElements';
+
 const Logo = () => {
   return (
     <>
