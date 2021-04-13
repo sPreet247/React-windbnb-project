@@ -13,7 +13,7 @@ import {
   Button,
 } from './NavSearchElements';
 
-import LocationDropdown from '../LocationDropdown/LocationDropdown';
+// import LocationDropdown from '../LocationDropdown/LocationDropdown';
 
 function NavSearch() {
   const [navExpand, setNavExpand] = useState(false);
@@ -23,42 +23,26 @@ function NavSearch() {
 
   return (
     <>
-      {/* {navExpand ? (
-        <Wrapper>
-          <Nav expand>
-            <Button expandBtn>
-              <div>
-                <Location>
-                  <TopNavText>Location</TopNavText>
-                  <Font expandFont>Select Location</Font>
-                </Location>
-              </div>
-              <LocationDropdown />
-              <div>
-                <AddGuest>
-                  <TopNavText>Guests</TopNavText>
-                  <Font expandFont>Add guests</Font>
-                </AddGuest>
-              </div>
-              <div>
-                <SearchEx onClick={Toggle}>
-                  <Font expandFont>
-                    <MdSearch size={35} style={{ color: '#ffffff' }} />
-                    <SearchText>Search</SearchText>
-                  </Font>
-                </SearchEx>
-              </div>
-            </Button>
-          </Nav>
-        </Wrapper>
-      ) : ( */}
-      <Nav>
-        <Input placeholder="Select Location" />
-        <Input placeholder="Add Guests" />
-        <Button>
-          <MdSearch size={35} style={{ color: '#ffffff' }} />
-        </Button>
-      </Nav>
+      <Wrapper>
+        <Nav expand>
+          <Input placeholder="Location" expandInput />
+
+          <Input placeholder="Guests" expandInput />
+
+          <Button expandBtn>
+            <MdSearch size={35} style={{ color: '#ffffff' }} />
+            Search
+          </Button>
+        </Nav>
+      </Wrapper>
+
+      {/* <Nav>
+          <Input placeholder="Select Location" />
+          <Input placeholder="Add Guests" />
+          <Button>
+            <MdSearch size={35} style={{ color: '#eb5757' }} />
+          </Button>
+        </Nav> */}
     </>
   );
 }

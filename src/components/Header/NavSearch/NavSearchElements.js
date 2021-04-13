@@ -3,13 +3,25 @@ import styled, { css } from 'styled-components';
 export const Wrapper = styled.div``;
 
 export const Nav = styled.nav`
+  min-height: 3.438rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 1px 6px rgb(0 0 0 / 10%);
+  border-radius: 1rem;
+  overflow: hidden;
+
   ${(props) =>
     props.expand &&
     css`
       position: fixed;
       top: 0;
       left: 0;
-      padding: 2rem 0;
+      padding: 1rem 0;
       margin-bottom: 2rem;
       width: 100%;
       display: flex;
@@ -20,18 +32,20 @@ export const Nav = styled.nav`
 `;
 
 export const Input = styled.input`
-  padding: 1rem;
+  padding: 0 1rem;
+  border: 0;
+  border-right: 1px solid #f2f2f2;
+  font-size: 0.8rem;
 
-  background: #ffffff;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
-  cursor: pointer;
+  flex-direction: column;
+  color: #828282;
+  font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 
   ${(props) =>
-    props.expandBtn &&
+    props.expandInput &&
     css`
       display: flex;
       justify-content: space-between;
@@ -52,6 +66,15 @@ export const Button = styled.button`
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   padding: 1rem;
+  background: #ffffff;
+
+  ${(props) =>
+    props.expandBtn &&
+    css`
+      color: #ffffff;
+      background-color: #eb5757;
+      cursor: pointer;
+    `}
 `;
 
 export const Font = styled.h4`
