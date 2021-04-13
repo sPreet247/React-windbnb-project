@@ -19,10 +19,8 @@ export const Nav = styled.nav`
     `}
 `;
 
-export const Button = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+export const Input = styled.input`
+  padding: 1rem;
 
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
@@ -48,6 +46,12 @@ export const Button = styled.button`
       overflow: hidden;
       text-overflow: ellipsis;
     `}
+`;
+
+export const Button = styled.button`
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1rem;
 `;
 
 export const Font = styled.h4`

@@ -1,7 +1,7 @@
 import { MdSearch } from 'react-icons/md';
 import { useState } from 'react';
 import {
-  Button,
+  Input,
   Font,
   Nav,
   Wrapper,
@@ -10,6 +10,7 @@ import {
   AddGuest,
   SearchEx,
   SearchText,
+  Button,
 } from './NavSearchElements';
 
 import LocationDropdown from '../LocationDropdown/LocationDropdown';
@@ -22,7 +23,7 @@ function NavSearch() {
 
   return (
     <>
-      {navExpand ? (
+      {/* {navExpand ? (
         <Wrapper>
           <Nav expand>
             <Button expandBtn>
@@ -50,24 +51,14 @@ function NavSearch() {
             </Button>
           </Nav>
         </Wrapper>
-      ) : (
-        <Nav>
-          <Button>
-            <div onClick={Toggle}>
-              <Font>Select Location</Font>
-            </div>
-
-            <div onClick={Toggle}>
-              <Font>Add guests</Font>
-            </div>
-            <div>
-              <Font>
-                <MdSearch size={35} style={{ color: '#EB5757' }} />
-              </Font>
-            </div>
-          </Button>
-        </Nav>
-      )}
+      ) : ( */}
+      <Nav>
+        <Input placeholder="Select Location" />
+        <Input placeholder="Add Guests" />
+        <Button>
+          <MdSearch size={35} style={{ color: '#ffffff' }} />
+        </Button>
+      </Nav>
     </>
   );
 }
