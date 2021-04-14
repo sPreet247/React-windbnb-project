@@ -1,14 +1,17 @@
 import styled, { css } from 'styled-components';
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
 export const Nav = styled.nav`
   min-height: 3.438rem;
-  display: -webkit-flex;
+
   display: flex;
-  -webkit-align-items: center;
+
   align-items: center;
-  -webkit-justify-content: center;
+
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 1px 6px rgb(0 0 0 / 10%);
@@ -21,12 +24,10 @@ export const Nav = styled.nav`
       position: fixed;
       top: 0;
       left: 0;
-      padding: 1rem 0;
+      padding: 5rem 3rem;
       margin-bottom: 2rem;
       width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+
       background: #ffffff;
     `}
 `;
@@ -43,6 +44,13 @@ export const Input = styled.input`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
+
+  ${(props) =>
+    props.disabled &&
+    css`
+      background: #ffffff;
+    `}
 
   ${(props) =>
     props.expandInput &&
@@ -50,15 +58,21 @@ export const Input = styled.input`
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-      width: 83%;
+      padding: 1rem;
+      font-size: 1rem;
+      height: 100%;
+      width: 50%;
       background: #ffffff;
       box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
-      border-radius: 1rem;
+
       cursor: pointer;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    `}
+
+  ${(props) =>
+    props.radius &&
+    css`
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
     `}
 `;
 
@@ -72,8 +86,12 @@ export const Button = styled.button`
     props.expandBtn &&
     css`
       color: #ffffff;
+
       background-color: #eb5757;
       cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     `}
 `;
 

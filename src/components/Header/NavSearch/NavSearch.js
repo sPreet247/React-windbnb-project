@@ -23,26 +23,30 @@ function NavSearch() {
 
   return (
     <>
-      <Wrapper>
-        <Nav expand>
-          <Input placeholder="Location" expandInput />
+      {navExpand ? (
+        <Wrapper>
+          <Nav expand>
+            <Input placeholder="Location" expandInput radius />
 
-          <Input placeholder="Guests" expandInput />
+            <Input placeholder="Guests" expandInput />
 
-          <Button expandBtn>
-            <MdSearch size={35} style={{ color: '#ffffff' }} />
-            Search
-          </Button>
-        </Nav>
-      </Wrapper>
-
-      {/* <Nav>
-          <Input placeholder="Select Location" />
-          <Input placeholder="Add Guests" />
+            <Button expandBtn onClick={Toggle}>
+              <MdSearch size={25} style={{ color: '#ffffff' }} />
+              Search
+            </Button>
+          </Nav>
+        </Wrapper>
+      ) : (
+        <Nav>
+          <div onClick={Toggle}>
+            <Input placeholder="Select Location" disabled />
+            <Input placeholder="Add Guests" disabled />
+          </div>
           <Button>
             <MdSearch size={35} style={{ color: '#eb5757' }} />
           </Button>
-        </Nav> */}
+        </Nav>
+      )}
     </>
   );
 }
