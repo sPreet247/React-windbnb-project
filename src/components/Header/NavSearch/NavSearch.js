@@ -1,19 +1,8 @@
 import { MdSearch } from 'react-icons/md';
 import { useState } from 'react';
-import {
-  Input,
-  Font,
-  Nav,
-  Wrapper,
-  Location,
-  TopNavText,
-  AddGuest,
-  SearchEx,
-  SearchText,
-  Button,
-} from './NavSearchElements';
+import { Input, Nav, Wrapper, Button } from './NavSearchElements';
 
-// import LocationDropdown from '../LocationDropdown/LocationDropdown';
+import LocationDropdown from '../LocationDropdown/LocationDropdown';
 
 function NavSearch() {
   const [navExpand, setNavExpand] = useState(false);
@@ -34,6 +23,7 @@ function NavSearch() {
               <MdSearch size={25} style={{ color: '#ffffff' }} />
               Search
             </Button>
+            <LocationDropdown />
           </Nav>
         </Wrapper>
       ) : (
