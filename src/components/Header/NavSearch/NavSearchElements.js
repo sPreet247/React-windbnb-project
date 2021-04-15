@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Nav = styled.nav`
-  min-height: 3.438rem;
+  min-height: 3rem;
 
   display: flex;
 
@@ -24,7 +24,7 @@ export const Nav = styled.nav`
       position: fixed;
       top: 0;
       left: 0;
-      padding: 5rem 3rem;
+      padding: 2rem 8rem;
       margin-bottom: 2rem;
       width: 100%;
 

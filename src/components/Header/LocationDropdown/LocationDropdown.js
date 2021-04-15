@@ -1,16 +1,25 @@
-import {} from './LocationDropdownElements';
-
+import { UL, Wrapper } from './LocationDropdownElements';
+import { MdPlace } from 'react-icons/md';
 function LocationDropdown() {
+  const Location = [
+    'Helsinki, Finland',
+    'Turku, Finland',
+    'Vaasa, Finland',
+    'Oulu, Finland',
+  ];
   return (
     <>
-      <div>
-        <ul>
-          <li>Helsinki, Finland</li>
-          <li>Turku, Finland</li>
-          <li>Vaasa, Finland</li>
-          <li>Oulu, Finland</li>
-        </ul>
-      </div>
+      <Wrapper>
+        {Location.map((item, index) => (
+          <div key={index}>
+            <UL>
+              <li>
+                <MdPlace /> {item}
+              </li>
+            </UL>
+          </div>
+        ))}
+      </Wrapper>
     </>
   );
 }

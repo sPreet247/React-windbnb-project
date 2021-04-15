@@ -23,8 +23,8 @@ function NavSearch() {
               <MdSearch size={25} style={{ color: '#ffffff' }} />
               Search
             </Button>
-            <LocationDropdown />
           </Nav>
+          <LocationDropdown />
         </Wrapper>
       ) : (
         <Nav>
