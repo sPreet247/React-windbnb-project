@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 export const Wrapper = styled.div`
   position: fixed;
   width: calc(50% - 11.5rem);
+
   top: 6rem;
   background: #fff;
   left: 8rem;
