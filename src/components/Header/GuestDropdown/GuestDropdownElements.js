@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   width: calc(50% - 11.5rem);
   top: 6rem;
   background: #fff;
-  left: 8rem;
+  left: 44.25rem;
   border-radius: 1rem;
   box-shadow: 0 1px 6px rgb(0 0 0 / 10%);
   overflow: hidden;

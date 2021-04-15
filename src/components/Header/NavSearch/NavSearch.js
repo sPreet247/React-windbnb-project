@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Input, Nav, Wrapper, Button } from './NavSearchElements';
 
 import LocationDropdown from '../LocationDropdown/LocationDropdown';
+import GuestDropdown from '../GuestDropdown/GuestDropdown';
 
 function NavSearch() {
   const [navExpand, setNavExpand] = useState(false);
@@ -25,6 +26,7 @@ function NavSearch() {
             </Button>
           </Nav>
           <LocationDropdown />
+          <GuestDropdown />
         </Wrapper>
       ) : (
         <Nav>
