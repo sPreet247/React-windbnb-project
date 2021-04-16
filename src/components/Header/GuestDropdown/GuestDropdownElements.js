@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 
 export const GuestWrapper = styled.div`
   padding: 1rem;
-  list-style-type: none;
+
   font-family: Mulish;
   font-style: normal;
   font-weight: normal;
@@ -32,6 +32,7 @@ export const Button = styled.button`
 `;
 
 export const BtnWrapper = styled.div`
+  margin-top: 0.5rem;
   height: 1.5rem;
   display: -webkit-flex;
   display: flex;
