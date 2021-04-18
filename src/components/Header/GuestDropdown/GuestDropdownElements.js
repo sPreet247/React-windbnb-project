@@ -23,13 +23,26 @@ export const GuestWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-font-weight: bold;
-font-size: 0.875rem;
-line-height: 1.125rem;
-`
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+
+  ${(props) =>
+    props.text &&
+    css`
+      padding-top: 0.3rem;
+      font-weight: 300;
+      color: #828282;
+    `}
+`;
+
+export const Count = styled.span`
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 600;
+`;
 
 export const Button = styled.button`
-  margin: 0.5rem;
   width: 1.5rem;
   border: 1px solid #828282;
   background: #fff;
