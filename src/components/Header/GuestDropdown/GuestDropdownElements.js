@@ -44,6 +44,7 @@ export const Count = styled.span`
 
 export const Button = styled.button`
   width: 1.5rem;
+  height: 1.5rem;
   border: 1px solid #828282;
   background: #fff;
   border-radius: 4px;

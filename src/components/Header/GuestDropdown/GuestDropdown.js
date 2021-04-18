@@ -6,8 +6,10 @@ import {
   Title,
   Count,
 } from './GuestDropdownElements';
+import { useState } from 'react';
 import {} from 'react-icons/md';
 function GuestDropdown() {
+  const [count, SetCount] = useState(null);
   return (
     <>
       <Wrapper>
