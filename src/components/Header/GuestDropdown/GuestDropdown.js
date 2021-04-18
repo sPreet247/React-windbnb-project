@@ -3,6 +3,7 @@ import {
   Wrapper,
   BtnWrapper,
   GuestWrapper,
+  Title,
 } from './GuestDropdownElements';
 import {} from 'react-icons/md';
 function GuestDropdown() {
@@ -10,7 +11,7 @@ function GuestDropdown() {
     <>
       <Wrapper>
         <GuestWrapper>
-          <h1>Adults</h1>
+          <Title>Adults</Title>
           <h4>Age 13 or above </h4>
           <BtnWrapper>
             <Button>-</Button>
@@ -20,7 +21,7 @@ function GuestDropdown() {
         </GuestWrapper>
 
         <GuestWrapper>
-          <h1>Children</h1>
+          <Title>Children</Title>
           <h4>Age 2 - 12</h4>
           <BtnWrapper>
             <Button>-</Button>

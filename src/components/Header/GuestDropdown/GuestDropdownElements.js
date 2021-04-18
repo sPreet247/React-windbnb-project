@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   width: calc(50% - 11.5rem);
   top: 6rem;
   background: #fff;
-  left: 17rem;
+  left: 30rem;
   border-radius: 1rem;
   box-shadow: 0 1px 6px rgb(0 0 0 / 10%);
   overflow: hidden;
@@ -21,6 +21,12 @@ export const GuestWrapper = styled.div`
   line-height: 1.125rem;
   color: #4f4f4f;
 `;
+
+export const Title = styled.h1`
+font-weight: bold;
+font-size: 0.875rem;
+line-height: 1.125rem;
+`
 
 export const Button = styled.button`
   margin: 0.5rem;
