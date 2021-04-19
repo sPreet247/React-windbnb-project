@@ -1,37 +1,13 @@
-import {
-  Button,
-  Wrapper,
-  BtnWrapper,
-  GuestWrapper,
-  Title,
-  Count,
-} from './GuestDropdownElements';
-import { useState } from 'react';
 import {} from 'react-icons/md';
+import GuestDropdownSub from './GuestDropdownSub';
+import { Wrapper } from './GuestDropdownElements';
+
 function GuestDropdown() {
-  const [count, SetCount] = useState(null);
   return (
     <>
       <Wrapper>
-        <GuestWrapper>
-          <Title>Adults</Title>
-          <Title text>Age 13 or above </Title>
-          <BtnWrapper>
-            <Button>-</Button>
-            <Count>0</Count>
-            <Button>+</Button>
-          </BtnWrapper>
-        </GuestWrapper>
-
-        <GuestWrapper>
-          <Title>Children</Title>
-          <Title text>Age 2 - 12</Title>
-          <BtnWrapper>
-            <Button>-</Button>
-            <Count>0</Count>
-            <Button>+</Button>
-          </BtnWrapper>
-        </GuestWrapper>
+        <GuestDropdownSub TitleH="Adults" TitleSubH="Age 13 or above" />
+        {/* <GuestDropdownSub TitleH="Children" TitleSubH="Age 2 - 12" /> */}
       </Wrapper>
     </>
   );

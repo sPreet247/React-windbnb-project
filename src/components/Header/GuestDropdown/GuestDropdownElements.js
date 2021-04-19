@@ -26,7 +26,9 @@ export const Title = styled.h1`
   font-weight: bold;
   font-size: 0.875rem;
   line-height: 1.125rem;
+`;
 
+export const TitleSub = styled(Title)`
   ${(props) =>
     props.text &&
     css`
