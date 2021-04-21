@@ -6,17 +6,25 @@ import {
   TitleSub,
   Count,
 } from './GuestDropdownElements';
+import { useState } from 'react';
+function GuestDropdownSub({ TitleH, TitleSubH }) {
+  const [count, SetCount] = useState(0);
+  function increment() {
+    SetCount(count + 1);
+  }
 
-function GuestDropdownSub({ TitleH, TitleSubH, decrement, increment }) {
+  function decrement() {
+    SetCount(count - 1);
+  }
   return (
     <>
       <GuestWrapper>
         <Title>{TitleH}</Title>
         <TitleSub text>{TitleSubH}</TitleSub>
         <BtnWrapper>
-          <Button onClick={() => decrement}>-</Button>
-          <Count>0</Count>
-          <Button onClick={() => increment}>+</Button>
+          <Button onClick={decrement}>-</Button>
+          <Count>{count}</Count>
+          <Button onClick={increment}>+</Button>
         </BtnWrapper>
       </GuestWrapper>
     </>
