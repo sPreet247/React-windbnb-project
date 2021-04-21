@@ -22,7 +22,9 @@ function GuestDropdownSub({ TitleH, TitleSubH }) {
         <Title>{TitleH}</Title>
         <TitleSub text>{TitleSubH}</TitleSub>
         <BtnWrapper>
-          <Button onClick={decrement}>-</Button>
+          <Button onClick={decrement} disabled={count <= 0}>
+            -
+          </Button>
           <Count>{count}</Count>
           <Button onClick={increment}>+</Button>
         </BtnWrapper>

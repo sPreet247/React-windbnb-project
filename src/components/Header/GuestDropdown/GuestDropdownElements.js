@@ -51,6 +51,12 @@ export const Button = styled.button`
   background: #fff;
   border-radius: 4px;
   cursor: pointer;
+
+  ${(props) =>
+    props.disabled &&
+    css`
+      background-color: #f8f9fa;
+    `}
 `;
 
 export const BtnWrapper = styled.div`
