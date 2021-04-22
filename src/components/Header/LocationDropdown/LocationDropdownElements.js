@@ -21,4 +21,10 @@ export const UL = styled.ul`
   font-size: 0.9rem;
   line-height: 1.125rem;
   color: #4f4f4f;
+
+  ${props => props.onHover && css `
+  :hover{
+    background: red;
+  }
+  `}
 `;

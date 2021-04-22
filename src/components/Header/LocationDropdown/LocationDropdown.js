@@ -12,7 +12,7 @@ function LocationDropdown() {
       <Wrapper>
         {Location.map((item, index) => (
           <div key={index}>
-            <UL>
+            <UL onHover>
               <li>
                 <MdPlace /> {item}
               </li>
