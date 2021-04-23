@@ -24,7 +24,7 @@ export const UL = styled.ul`
 
   ${props => props.onHover && css `
   :hover{
-    background: red;
+    background: #F2F2F2;
   }
   `}
 `;
