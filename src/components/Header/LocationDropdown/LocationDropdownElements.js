@@ -22,9 +22,11 @@ export const UL = styled.ul`
   line-height: 1.125rem;
   color: #4f4f4f;
 
-  ${props => props.onHover && css `
-  :hover{
-    background: #F2F2F2;
-  }
-  `}
+  ${(props) =>
+    props.onHover &&
+    css`
+      :hover {
+        background: #f2f2f2;
+      }
+    `}
 `;
