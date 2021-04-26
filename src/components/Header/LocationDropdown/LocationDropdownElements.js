@@ -25,6 +25,7 @@ export const UL = styled.ul`
   ${(props) =>
     props.onHover &&
     css`
+      cursor: pointer;
       :hover {
         background: #f2f2f2;
       }
