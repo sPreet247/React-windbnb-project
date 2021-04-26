@@ -11,6 +11,11 @@ function NavSearch() {
     setNavExpand(!navExpand);
   };
 
+  const [isOpen, setIsOpen] = useState(false);
+  const Open = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       {navExpand ? (
@@ -25,8 +30,7 @@ function NavSearch() {
               Search
             </Button>
           </Nav>
-          <LocationDropdown />
-          <GuestDropdown />
+          {isOpen ? <LocationDropdown /> : <GuestDropdown />}
         </Wrapper>
       ) : (
         <Nav>
