@@ -30,7 +30,7 @@ function NavSearch() {
               Search
             </Button>
           </Nav>
-          {isOpen ? <LocationDropdown /> : <GuestDropdown />}
+          {isOpen ? <LocationDropdown /> : <GuestDropdown onClick={Open} />}
         </Wrapper>
       ) : (
         <Nav>
