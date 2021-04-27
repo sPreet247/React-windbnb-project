@@ -1,5 +1,5 @@
 import { MdSearch } from 'react-icons/md';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Input, Nav, Wrapper, Button } from './NavSearchElements';
 
 import LocationDropdown from '../LocationDropdown/LocationDropdown';
@@ -16,21 +16,23 @@ function NavSearch() {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {});
+
   return (
     <>
       {navExpand ? (
         <Wrapper>
           <Nav expand>
-            <Input placeholder="Location" expandInput radius />
+            <Input placeholder="Location" expandInput radius onClick={Open} />
 
-            <Input placeholder="Guests" expandInput />
+            <Input placeholder="Guests" expandInput onClick={Open} />
 
             <Button expandBtn onClick={Toggle}>
               <MdSearch size={25} style={{ color: '#ffffff' }} />
               Search
             </Button>
           </Nav>
-          {isOpen ? <LocationDropdown /> : <GuestDropdown onClick={Open} />}
+          {isOpen ? <LocationDropdown /> : <GuestDropdown />}
         </Wrapper>
       ) : (
         <Nav>
