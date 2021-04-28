@@ -22,10 +22,10 @@ function NavSearch() {
     <>
       {navExpand ? (
         <Wrapper>
-          <Nav expand>
-            <Input placeholder="Location" expandInput radius onClick={Open} />
+          <Nav expand onClick={Open}>
+            <Input placeholder="Location" expandInput radius />
 
-            <Input placeholder="Guests" expandInput onClick={Open} />
+            <Input placeholder="Guests" expandInput />
 
             <Button expandBtn onClick={Toggle}>
               <MdSearch size={25} style={{ color: '#ffffff' }} />
