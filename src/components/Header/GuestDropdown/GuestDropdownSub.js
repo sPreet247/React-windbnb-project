@@ -7,7 +7,7 @@ import {
   Count,
 } from './GuestDropdownElements';
 import { useState } from 'react';
-function GuestDropdownSub({ TitleH, TitleSubH }) {
+function GuestDropdownSub({ TitleH, TitleSubH, setGuests }) {
   const [count, SetCount] = useState(0);
   function increment() {
     SetCount(count + 1);

@@ -2,7 +2,7 @@ import {} from 'react-icons/md';
 import GuestDropdownSub from './GuestDropdownSub';
 import { Wrapper } from './GuestDropdownElements';
 
-function GuestDropdown() {
+function GuestDropdown({ setGuests }) {
   return (
     <>
       <Wrapper>
