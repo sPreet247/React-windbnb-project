@@ -6,6 +6,8 @@ import LocationDropdown from '../LocationDropdown/LocationDropdown';
 import GuestDropdown from '../GuestDropdown/GuestDropdown';
 
 function NavSearch() {
+  const [location, setLocation] = useState('Location');
+
   const [navExpand, setNavExpand] = useState(false);
   const Toggle = () => {
     setNavExpand(!navExpand);
@@ -23,7 +25,7 @@ function NavSearch() {
       {navExpand ? (
         <Wrapper>
           <Nav expand onClick={Open}>
-            <Input placeholder="Location" expandInput radius />
+            <Input placeholder="Location" expandInput radius value={location} />
 
             <Input placeholder="Guests" expandInput />
 
@@ -32,7 +34,11 @@ function NavSearch() {
               Search
             </Button>
           </Nav>
-          {isOpen ? <LocationDropdown /> : <GuestDropdown />}
+          {isOpen ? (
+            <LocationDropdown setLocation={setLocation} />
+          ) : (
+            <GuestDropdown />
+          )}
         </Wrapper>
       ) : (
         <Nav>

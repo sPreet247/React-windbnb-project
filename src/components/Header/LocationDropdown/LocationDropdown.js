@@ -1,9 +1,7 @@
 import { UL, Wrapper } from './LocationDropdownElements';
 import { MdPlace } from 'react-icons/md';
-import { useState } from 'react';
-function LocationDropdown() {
-  const [location, setLocation] = useState('Location');
 
+function LocationDropdown({ setLocation }) {
   const Location = [
     'Helsinki, Finland',
     'Turku, Finland',
