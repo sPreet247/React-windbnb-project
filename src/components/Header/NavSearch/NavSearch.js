@@ -1,12 +1,13 @@
 import { MdSearch } from 'react-icons/md';
-import { useEffect, useState } from 'react';
+import AppContext from '../../../context/AppContext';
+import { useEffect, useState, useContext } from 'react';
 import { Input, Nav, Wrapper, Button } from './NavSearchElements';
 
 import LocationDropdown from '../LocationDropdown/LocationDropdown';
 import GuestDropdown from '../GuestDropdown/GuestDropdown';
 
 function NavSearch() {
-  const [location, setLocation] = useState('Location');
+  const { location, setLocation } = useContext(AppContext);
   const [guests, setGuests] = useState('Guests');
 
   const [navExpand, setNavExpand] = useState(false);
