@@ -37,7 +37,11 @@ function NavSearch() {
           <Nav expand onClick={Open}>
             <Input placeholder="Location" expandInput radius value={location} />
 
-            <Input placeholder="Guests" expandInput />
+            <Input
+              placeholder="Guests"
+              expandInput
+              value={`${adult + child} Guests `}
+            />
 
             <Button expandBtn onClick={Toggle}>
               <MdSearch size={25} style={{ color: '#ffffff' }} />
