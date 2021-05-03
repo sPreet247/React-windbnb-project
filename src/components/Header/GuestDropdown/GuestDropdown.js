@@ -8,18 +8,45 @@ import {
   Count,
 } from '../GuestDropdown/GuestDropdownElements';
 
-function GuestDropdown({ TitleH, TitleSubH, count, increment, decrement }) {
+function GuestDropdown({ count, setCount, adult, setAdult, child, setChild }) {
+  function incrementAdult() {
+    setAdult(adult + 1);
+  }
+
+  function decrementAdult() {
+    setAdult(adult - 1);
+  }
+
+  function incrementChild() {
+    setChild(child + 1);
+  }
+
+  function decrementChild() {
+    setChild(child - 1);
+  }
   return (
     <>
       <GuestWrapper>
-        <Title>{TitleH}</Title>
-        <TitleSub text>{TitleSubH}</TitleSub>
+        <Title>Adults</Title>
+        <TitleSub text>Age 13 or above</TitleSub>
         <BtnWrapper>
-          <ButtonG onClick={decrement} disabled={count <= 0}>
+          <ButtonG onClick={decrementAdult} disabled={adult <= 0}>
             -
           </ButtonG>
-          <Count>{count}</Count>
-          <ButtonG onClick={increment}>+</ButtonG>
+          <Count>{adult}</Count>
+          <ButtonG onClick={incrementAdult}>+</ButtonG>
+        </BtnWrapper>
+      </GuestWrapper>
+
+      <GuestWrapper>
+        <Title>Children</Title>
+        <TitleSub text>Age 2 - 12</TitleSub>
+        <BtnWrapper>
+          <ButtonG onClick={decrementChild} disabled={child <= 0}>
+            -
+          </ButtonG>
+          <Count>{child}</Count>
+          <ButtonG onClick={incrementChild}>+</ButtonG>
         </BtnWrapper>
       </GuestWrapper>
     </>

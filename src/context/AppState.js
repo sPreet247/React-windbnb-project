@@ -6,6 +6,8 @@ const AppState = (props) => {
   const [location, setLocation] = useState('Location');
   const [count, setCount] = useState(0);
   const [navExpand, setNavExpand] = useState(false);
+  const [adult, setAdult] = useState(0);
+  const [child, setChild] = useState(0);
   return (
     <AppContext.Provider
       value={{
@@ -15,6 +17,10 @@ const AppState = (props) => {
         setCount,
         navExpand,
         setNavExpand,
+        adult,
+        setAdult,
+        child,
+        setChild,
       }}>
       {props.children}
     </AppContext.Provider>

@@ -1,6 +1,6 @@
 import { MdSearch } from 'react-icons/md';
 import AppContext from '../../../context/AppContext';
-import { useEffect, useState, useContext } from 'react';
+import { useState, useContext } from 'react';
 import { Input, Nav, Wrapper, Button } from './NavSearchElements';
 import { WrapperG } from '../GuestDropdown/GuestDropdownElements';
 
@@ -15,15 +15,11 @@ function NavSearch() {
     setCount,
     navExpand,
     setNavExpand,
+    adult,
+    setAdult,
+    child,
+    setChild,
   } = useContext(AppContext);
-  function increment() {
-    setCount(count + 1);
-  }
-
-  function decrement() {
-    setCount(count - 1);
-  }
-  const [guests, setGuests] = useState('Guests');
 
   const Toggle = () => {
     setNavExpand(!navExpand);
@@ -34,8 +30,6 @@ function NavSearch() {
     setIsOpen(!isOpen);
   };
 
-  useEffect(() => {});
-
   return (
     <>
       {navExpand ? (
@@ -43,7 +37,7 @@ function NavSearch() {
           <Nav expand onClick={Open}>
             <Input placeholder="Location" expandInput radius value={location} />
 
-            <Input placeholder="Guests" expandInput value={guests} />
+            <Input placeholder="Guests" expandInput />
 
             <Button expandBtn onClick={Toggle}>
               <MdSearch size={25} style={{ color: '#ffffff' }} />
@@ -55,11 +49,13 @@ function NavSearch() {
           ) : (
             <WrapperG>
               <GuestDropdown
-                TitleH="Adults"
-                TitleSubH="Age 13 or above"
-                count
+                count={count}
+                setCount={setCount}
+                adult={adult}
+                setAdult={setAdult}
+                child={child}
+                setChild={setChild}
               />
-              <GuestDropdown TitleH="Children" TitleSubH="Age 2 - 12" />
             </WrapperG>
           )}
         </Wrapper>
