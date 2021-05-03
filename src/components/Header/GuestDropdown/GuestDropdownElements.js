@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const Wrapper = styled.div`
+export const WrapperG = styled.div`
   position: fixed;
   width: calc(50% - 11.5rem);
   top: 6rem;
@@ -44,7 +44,7 @@ export const Count = styled.span`
   font-weight: 600;
 `;
 
-export const Button = styled.button`
+export const ButtonG = styled.button`
   width: 1.5rem;
   height: 1.5rem;
   border: 1px solid #828282;

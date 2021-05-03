@@ -1,14 +1,27 @@
 import {} from 'react-icons/md';
-import GuestDropdownSub from './GuestDropdownSub';
-import { Wrapper } from './GuestDropdownElements';
+import {
+  ButtonG,
+  BtnWrapper,
+  GuestWrapper,
+  Title,
+  TitleSub,
+  Count,
+} from '../GuestDropdown/GuestDropdownElements';
 
-function GuestDropdown({ setGuests }) {
+function GuestDropdown({ TitleH, TitleSubH, count, increment, decrement }) {
   return (
     <>
-      <Wrapper>
-        <GuestDropdownSub TitleH="Adults" TitleSubH="Age 13 or above" />
-        <GuestDropdownSub TitleH="Children" TitleSubH="Age 2 - 12" />
-      </Wrapper>
+      <GuestWrapper>
+        <Title>{TitleH}</Title>
+        <TitleSub text>{TitleSubH}</TitleSub>
+        <BtnWrapper>
+          <ButtonG onClick={decrement} disabled={count <= 0}>
+            -
+          </ButtonG>
+          <Count>{count}</Count>
+          <ButtonG onClick={increment}>+</ButtonG>
+        </BtnWrapper>
+      </GuestWrapper>
     </>
   );
 }
