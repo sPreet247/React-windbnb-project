@@ -2,15 +2,29 @@ import { MdSearch } from 'react-icons/md';
 import AppContext from '../../../context/AppContext';
 import { useEffect, useState, useContext } from 'react';
 import { Input, Nav, Wrapper, Button } from './NavSearchElements';
+import { WrapperG } from '../GuestDropdown/GuestDropdownElements';
 
 import LocationDropdown from '../LocationDropdown/LocationDropdown';
 import GuestDropdown from '../GuestDropdown/GuestDropdown';
 
 function NavSearch() {
-  const { location, setLocation } = useContext(AppContext);
+  const {
+    location,
+    setLocation,
+    count,
+    setCount,
+    navExpand,
+    setNavExpand,
+  } = useContext(AppContext);
+  function increment() {
+    setCount(count + 1);
+  }
+
+  function decrement() {
+    setCount(count - 1);
+  }
   const [guests, setGuests] = useState('Guests');
 
-  const [navExpand, setNavExpand] = useState(false);
   const Toggle = () => {
     setNavExpand(!navExpand);
   };
@@ -39,7 +53,14 @@ function NavSearch() {
           {isOpen ? (
             <LocationDropdown setLocation={setLocation} />
           ) : (
-            <GuestDropdown setGuests={setGuests} />
+            <WrapperG>
+              <GuestDropdown
+                TitleH="Adults"
+                TitleSubH="Age 13 or above"
+                count
+              />
+              <GuestDropdown TitleH="Children" TitleSubH="Age 2 - 12" />
+            </WrapperG>
           )}
         </Wrapper>
       ) : (
