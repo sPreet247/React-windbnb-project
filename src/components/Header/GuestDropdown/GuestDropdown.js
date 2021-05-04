@@ -34,7 +34,9 @@ function GuestDropdown({ count, setCount, adult, setAdult, child, setChild }) {
             -
           </ButtonG>
           <Count>{adult}</Count>
-          <ButtonG onClick={incrementAdult}>+</ButtonG>
+          <ButtonG onClick={incrementAdult} disabled={adult >= 10}>
+            +
+          </ButtonG>
         </BtnWrapper>
       </GuestWrapper>
 
@@ -46,7 +48,9 @@ function GuestDropdown({ count, setCount, adult, setAdult, child, setChild }) {
             -
           </ButtonG>
           <Count>{child}</Count>
-          <ButtonG onClick={incrementChild}>+</ButtonG>
+          <ButtonG onClick={incrementChild} disabled={child >= 10}>
+            +
+          </ButtonG>
         </BtnWrapper>
       </GuestWrapper>
     </>
