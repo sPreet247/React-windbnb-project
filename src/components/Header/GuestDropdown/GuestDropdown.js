@@ -8,7 +8,7 @@ import {
   Count,
 } from '../GuestDropdown/GuestDropdownElements';
 
-function GuestDropdown({ count, setCount, adult, setAdult, child, setChild }) {
+function GuestDropdown({ adult, setAdult, child, setChild }) {
   function incrementAdult() {
     setAdult(adult + 1);
   }

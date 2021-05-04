@@ -1,6 +1,6 @@
 import { MdSearch } from 'react-icons/md';
 import AppContext from '../../../context/AppContext';
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import { Input, Nav, Wrapper, Button } from './NavSearchElements';
 import { WrapperG } from '../GuestDropdown/GuestDropdownElements';
 
@@ -11,8 +11,8 @@ function NavSearch() {
   const {
     location,
     setLocation,
-    count,
-    setCount,
+    isOpen,
+    setIsOpen,
     navExpand,
     setNavExpand,
     adult,
@@ -25,7 +25,6 @@ function NavSearch() {
     setNavExpand(!navExpand);
   };
 
-  const [isOpen, setIsOpen] = useState(false);
   const Open = () => {
     setIsOpen(!isOpen);
   };
@@ -53,8 +52,6 @@ function NavSearch() {
           ) : (
             <WrapperG>
               <GuestDropdown
-                count={count}
-                setCount={setCount}
                 adult={adult}
                 setAdult={setAdult}
                 child={child}
