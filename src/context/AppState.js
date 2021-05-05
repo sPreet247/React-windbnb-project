@@ -9,6 +9,7 @@ const AppState = (props) => {
   const [adult, setAdult] = useState(0);
   const [child, setChild] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
+  const [searchActive, setSearchActive] = useState(false);
   return (
     <AppContext.Provider
       value={{
@@ -24,6 +25,8 @@ const AppState = (props) => {
         setChild,
         isOpen,
         setIsOpen,
+        searchActive,
+        setSearchActive,
       }}>
       {props.children}
     </AppContext.Provider>
