@@ -150,3 +150,9 @@ export const TopNavText = styled.div`
 export const SearchText = styled.div`
   color: #ffffff;
 `;
+
+export const Backdrop = styled.div`
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+  height: 100%;
+`;
