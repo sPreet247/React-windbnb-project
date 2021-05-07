@@ -24,3 +24,9 @@ footer {
   font-size: 18px;
   line-height: 17px;
 }
+
+.backdrop {
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+  height: 100%;
+}

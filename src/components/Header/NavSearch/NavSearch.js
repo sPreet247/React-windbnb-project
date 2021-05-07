@@ -1,7 +1,8 @@
 import { MdSearch } from 'react-icons/md';
 import AppContext from '../../../context/AppContext';
 import { useContext } from 'react';
-import { Input, Nav, Wrapper, Button, Backdrop } from './NavSearchElements';
+import '../../../styles.css';
+import { Input, Nav, Wrapper, Button } from './NavSearchElements';
 import { WrapperG } from '../GuestDropdown/GuestDropdownElements';
 
 import LocationDropdown from '../LocationDropdown/LocationDropdown';
@@ -73,7 +74,9 @@ function NavSearch() {
           </Button>
         </Nav>
       )}
-      <Backdrop onClick={() => setSearchActive(false)} />
+      <div className="backdrop" onClick={() => setSearchActive(false)}>
+        {' '}
+      </div>
     </>
   );
 }
