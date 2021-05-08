@@ -74,9 +74,7 @@ function NavSearch() {
           </Button>
         </Nav>
       )}
-      <div className="backdrop" onClick={() => setSearchActive(false)}>
-        {' '}
-      </div>
+      <div className="backdrop" onClick={() => setSearchActive(false)}></div>
     </>
   );
 }
