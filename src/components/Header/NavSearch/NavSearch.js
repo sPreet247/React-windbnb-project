@@ -36,7 +36,7 @@ function NavSearch() {
     <>
       {navExpand ? (
         <Wrapper>
-          <Nav expand onClick={Open} searchActive>
+          <Nav expand onClick={Open}>
             <Input placeholder="Location" expandInput radius value={location} />
 
             <Input
@@ -66,8 +66,16 @@ function NavSearch() {
       ) : (
         <Nav>
           <div onClick={Toggle}>
-            <Input placeholder="Select Location" disabled />
-            <Input placeholder="Add Guests" disabled />
+            <Input
+              placeholder="Select Location"
+              disabled
+              onClick={() => setSearchActive(true)}
+            />
+            <Input
+              placeholder="Add Guests"
+              disabled
+              onClick={() => setSearchActive(true)}
+            />
           </div>
           <Button>
             <MdSearch size={35} style={{ color: '#eb5757' }} />
