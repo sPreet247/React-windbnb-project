@@ -36,7 +36,7 @@ function NavSearch() {
     <>
       {navExpand ? (
         <Wrapper>
-          <Nav expand onClick={Open}>
+          <Nav expand onClick={Open} searchActive>
             <Input placeholder="Location" expandInput radius value={location} />
 
             <Input

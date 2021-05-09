@@ -8,8 +8,8 @@ export default function App() {
   const { searchActive } = useContext(AppContext);
   return (
     <>
-      {searchActive ? <Header className="backdrop" /> : <Header />}
-      <Card />
+      {searchActive && <Header />}
+      <Card className="backdrop" />
       <footer>created by Sukhpreet Singh - devChallenges.io</footer>
     </>
   );
