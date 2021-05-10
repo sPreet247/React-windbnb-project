@@ -20,7 +20,7 @@ function NavSearch() {
     setAdult,
     child,
     setChild,
-    searchActive,
+
     setSearchActive,
   } = useContext(AppContext);
 
