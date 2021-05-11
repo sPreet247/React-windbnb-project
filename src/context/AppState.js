@@ -10,6 +10,7 @@ const AppState = (props) => {
   const [child, setChild] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const [searchActive, setSearchActive] = useState(false);
+
   return (
     <AppContext.Provider
       value={{
