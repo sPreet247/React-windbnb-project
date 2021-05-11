@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <Card className="backdrop" />
+      <Card />
 
       <footer>created by Sukhpreet Singh - devChallenges.io</footer>
     </>
