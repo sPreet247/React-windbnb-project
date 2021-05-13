@@ -14,6 +14,16 @@ export const Wrapper = styled.div`
   min-height: 1.813rem;
 `;
 
+export const H1 = styled.h1`
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+`;
+
 export const SuperHost = styled.div`
   font-family: 'Montserrat';
   font-style: normal;

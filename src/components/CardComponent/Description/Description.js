@@ -6,6 +6,7 @@ import {
   Title,
   Wrapper,
   Images,
+  H1,
 } from './DescriptionElements';
 import { AiFillStar } from 'react-icons/ai';
 import StayData from '../../../Data/Data.json';
@@ -14,6 +15,7 @@ const Description = () => {
   return (
     <>
       <div>
+        <H1>Stays in Finland</H1>
         <Descriptions>
           {StayData.map((data, index) => {
             return (
