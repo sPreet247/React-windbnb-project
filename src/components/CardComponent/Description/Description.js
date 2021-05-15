@@ -16,6 +16,7 @@ const Description = () => {
     <>
       <div>
         <H1>Stays in Finland</H1>
+        {StayData.length !== 0 && <div>{StayData.length}+ Stays</div>}
         <Descriptions>
           {StayData.map((data, index) => {
             return (
