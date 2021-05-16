@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+export const OWrapper = styled.div``;
+
 export const Descriptions = styled.div`
   display: flex;
   justify-content: space-around;
@@ -29,6 +31,10 @@ export const HeadWrap = styled.div`
   align-items: center;
   justify-content: space-between;
   font-weight: bold;
+  margin-bottom: 1rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 `;
 
 export const SuperHost = styled.div`

@@ -8,6 +8,7 @@ import {
   Images,
   H1,
   HeadWrap,
+  OWrapper,
 } from './DescriptionElements';
 import { AiFillStar } from 'react-icons/ai';
 import StayData from '../../../Data/Data.json';
@@ -15,7 +16,7 @@ import StayData from '../../../Data/Data.json';
 const Description = () => {
   return (
     <>
-      <div>
+      <OWrapper>
         <HeadWrap>
           <H1>Stays in Finland</H1>
           {StayData.length !== 0 && <div>{StayData.length}+ Stays</div>}
@@ -45,7 +46,7 @@ const Description = () => {
             );
           })}
         </Descriptions>
-      </div>
+      </OWrapper>
     </>
   );
 };
