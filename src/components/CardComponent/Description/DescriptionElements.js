@@ -22,7 +22,13 @@ export const H1 = styled.h1`
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
- 
+`;
+
+export const HeadWrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
 `;
 
 export const SuperHost = styled.div`
