@@ -8,6 +8,7 @@ const Header = () => {
     <>
       <Wrapper>
         <Logo />
+
         <NavSearch />
       </Wrapper>
     </>

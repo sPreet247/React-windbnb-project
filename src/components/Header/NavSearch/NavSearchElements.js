@@ -1,18 +1,10 @@
 import styled, { css } from 'styled-components';
 
-export const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
 export const Nav = styled.nav`
-  min-height: 3rem;
-
   display: flex;
 
   align-items: center;
 
-  justify-content: center;
   cursor: pointer;
   box-shadow: 0 1px 6px rgb(0 0 0 / 10%);
   border-radius: 1rem;
