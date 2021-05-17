@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components';
 
 export const Nav = styled.nav`
   display: flex;
-
   align-items: center;
+  margin-left: auto;
 
   cursor: pointer;
   box-shadow: 0 1px 6px rgb(0 0 0 / 10%);
