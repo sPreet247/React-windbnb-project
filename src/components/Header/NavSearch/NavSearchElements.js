@@ -88,58 +88,58 @@ export const Button = styled.button`
     `}
 `;
 
-export const Font = styled.h4`
-  font-family: Muli;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  padding: 1rem;
-  color: #bdbdbd;
-  border-right: 1px solid #f2f2f2;
+// export const Font = styled.h4`
+//   font-family: Muli;
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 0.875rem;
+//   line-height: 1.125rem;
+//   padding: 1rem;
+//   color: #bdbdbd;
+//   border-right: 1px solid #f2f2f2;
 
-  ${(props) =>
-    props.expandFont &&
-    css`
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: Muli;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 0.875rem;
-      line-height: 1.125rem;
-      padding: 1rem;
-      color: #bdbdbd;
-      border-right: 1px solid #f2f2f2;
-    `}
-`;
+//   ${(props) =>
+//     props.expandFont &&
+//     css`
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       font-family: Muli;
+//       font-style: normal;
+//       font-weight: 500;
+//       font-size: 0.875rem;
+//       line-height: 1.125rem;
+//       padding: 1rem;
+//       color: #bdbdbd;
+//       border-right: 1px solid #f2f2f2;
+//     `}
+// `;
 
-export const Location = styled.div`
-  width: 50%;
-`;
+// export const Location = styled.div`
+//   width: 50%;
+// `;
 
-export const AddGuest = styled.div`
-  width: 50%;
-`;
+// export const AddGuest = styled.div`
+//   width: 50%;
+// `;
 
-export const SearchEx = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #eb5757;
-  color: #ffffff;
-`;
+// export const SearchEx = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: #eb5757;
+//   color: #ffffff;
+// `;
 
-export const TopNavText = styled.div`
-  font-size: 0.7rem;
-  color: #333;
-  font-weight: 700;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-`;
+// export const TopNavText = styled.div`
+//   font-size: 0.7rem;
+//   color: #333;
+//   font-weight: 700;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+// `;
 
-export const SearchText = styled.div`
-  color: #ffffff;
-`;
+// export const SearchText = styled.div`
+//   color: #ffffff;
+// `;
