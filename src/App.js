@@ -4,7 +4,7 @@ import Header from './components/Header/Main/Header';
 import AppContext from './context/AppContext';
 import { useContext } from 'react';
 
-export default function App() {
+function App() {
   const { searchActive } = useContext(AppContext);
   return (
     <>
@@ -15,3 +15,4 @@ export default function App() {
     </>
   );
 }
+export default App;
