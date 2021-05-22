@@ -33,7 +33,7 @@ function NavSearch() {
   };
 
   return (
-    <>
+    <div>
       {navExpand ? (
         <Wrapper>
           <Nav expand onClick={Open}>
@@ -83,7 +83,7 @@ function NavSearch() {
         </Nav>
       )}
       <div className="backdrop" onClick={() => setSearchActive(false)}></div>
-    </>
+    </div>
   );
 }
 
