@@ -8,7 +8,7 @@ import { WrapperG } from '../GuestDropdown/GuestDropdownElements';
 import LocationDropdown from '../LocationDropdown/LocationDropdown';
 import GuestDropdown from '../GuestDropdown/GuestDropdown';
 
-function NavSearch() {
+const NavSearch = () => {
   const {
     location,
     setLocation,
@@ -82,9 +82,8 @@ function NavSearch() {
           </Button>
         </Nav>
       )}
-      <div className="backdrop" onClick={() => setSearchActive(false)}></div>
     </div>
   );
-}
+};
 
 export default NavSearch;
