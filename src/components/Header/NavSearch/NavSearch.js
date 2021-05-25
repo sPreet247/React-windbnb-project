@@ -20,8 +20,6 @@ function NavSearch() {
     setAdult,
     child,
     setChild,
-
-    setSearchActive,
   } = useContext(AppContext);
 
   const Toggle = () => {
@@ -66,16 +64,8 @@ function NavSearch() {
       ) : (
         <Nav>
           <div onClick={Toggle}>
-            <Input
-              placeholder="Select Location"
-              disabled
-              onClick={() => setSearchActive(true)}
-            />
-            <Input
-              placeholder="Add Guests"
-              disabled
-              onClick={() => setSearchActive(true)}
-            />
+            <Input placeholder="Select Location" disabled />
+            <Input placeholder="Add Guests" disabled />
           </div>
           <Button>
             <MdSearch size={35} style={{ color: '#eb5757' }} />
