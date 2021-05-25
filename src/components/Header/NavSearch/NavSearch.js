@@ -8,7 +8,7 @@ import { WrapperG } from '../GuestDropdown/GuestDropdownElements';
 import LocationDropdown from '../LocationDropdown/LocationDropdown';
 import GuestDropdown from '../GuestDropdown/GuestDropdown';
 
-const NavSearch = () => {
+function NavSearch() {
   const {
     location,
     setLocation,
@@ -84,6 +84,6 @@ const NavSearch = () => {
       )}
     </>
   );
-};
+}
 
 export default NavSearch;
