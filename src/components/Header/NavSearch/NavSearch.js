@@ -33,7 +33,7 @@ const NavSearch = () => {
   };
 
   return (
-    <div>
+    <>
       {navExpand ? (
         <Wrapper>
           <Nav expand onClick={Open}>
@@ -82,7 +82,7 @@ const NavSearch = () => {
           </Button>
         </Nav>
       )}
-    </div>
+    </>
   );
 };
 

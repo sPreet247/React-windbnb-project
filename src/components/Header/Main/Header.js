@@ -1,6 +1,6 @@
 import Logo from '../Logo/Logo';
 
-import NavSearch from '../NavSearch/NavSearch.js';
+import NavSearch from '../NavSearch/NavSearch';
 import { Wrapper } from './HeaderElements.js';
 
 const Header = () => {
