@@ -1,7 +1,7 @@
 import { MdSearch } from 'react-icons/md';
-import AppContext from '../../../context/AppContext';
+import AppContext from '../../context/AppContext';
 import { useContext } from 'react';
-import '../../../styles.css';
+
 import { Input, Nav, Wrapper, Button } from './NavSearchElements';
 import { WrapperG } from '../GuestDropdown/GuestDropdownElements';
 
