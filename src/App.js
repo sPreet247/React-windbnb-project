@@ -1,12 +1,12 @@
 import './styles.css';
-import Card from './components/CardComponent/Main/Card';
+import Description from './components/CardComponent/Description/Description';
 import Header from './components/Header/Main/Header';
 
 function App() {
   return (
     <>
       <Header />
-      <Card />
+      <Description />
 
       <footer>created by Sukhpreet Singh - devChallenges.io</footer>
     </>
