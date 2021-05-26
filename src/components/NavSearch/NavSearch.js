@@ -2,7 +2,7 @@ import { MdSearch } from 'react-icons/md';
 import AppContext from '../../context/AppContext';
 import { useContext } from 'react';
 
-import { Input, Nav, Wrapper, Button } from './NavSearchElements';
+import { Input, Nav, Button } from './NavSearchElements';
 import { WrapperG } from '../GuestDropdown/GuestDropdownElements';
 
 import LocationDropdown from '../LocationDropdown/LocationDropdown';
@@ -29,11 +29,10 @@ function NavSearch() {
   const Open = () => {
     setIsOpen(!isOpen);
   };
-
   return (
     <>
       {navExpand ? (
-        <Wrapper>
+        <div>
           <Nav expand onClick={Open}>
             <Input placeholder="Location" expandInput radius value={location} />
 
@@ -60,7 +59,7 @@ function NavSearch() {
               />
             </WrapperG>
           )}
-        </Wrapper>
+        </div>
       ) : (
         <Nav>
           <div onClick={Toggle}>
