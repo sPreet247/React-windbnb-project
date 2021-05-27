@@ -63,7 +63,7 @@ function NavSearch() {
       ) : (
         <Nav>
           <div onClick={Toggle}>
-            <Input placeholder="Select Location" disabled />
+            <Input placeholder="Select Location" disabled value={location} />
             <Input placeholder="Add Guests" disabled />
           </div>
           <Button>
