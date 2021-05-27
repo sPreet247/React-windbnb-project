@@ -10,7 +10,7 @@ import {
   HeadWrap,
 } from './DescriptionElements';
 import { AiFillStar } from 'react-icons/ai';
-import StayData from '../../../Data/Data.json';
+import StayData from '../../Data/Data.json';
 
 const Description = () => {
   return (

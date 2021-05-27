@@ -1,8 +1,8 @@
 import { MdSearch } from 'react-icons/md';
-import AppContext from '../../../context/AppContext';
+import AppContext from '../../context/AppContext';
 import { useContext } from 'react';
-import '../../../styles.css';
-import { Input, Nav, Wrapper, Button } from './NavSearchElements';
+
+import { Input, Nav, Button } from './NavSearchElements';
 import { WrapperG } from '../GuestDropdown/GuestDropdownElements';
 
 import LocationDropdown from '../LocationDropdown/LocationDropdown';
@@ -20,8 +20,6 @@ function NavSearch() {
     setAdult,
     child,
     setChild,
-
-    setSearchActive,
   } = useContext(AppContext);
 
   const Toggle = () => {
@@ -31,11 +29,10 @@ function NavSearch() {
   const Open = () => {
     setIsOpen(!isOpen);
   };
-
   return (
-    <div>
+    <>
       {navExpand ? (
-        <Wrapper>
+        <div>
           <Nav expand onClick={Open}>
             <Input placeholder="Location" expandInput radius value={location} />
 
@@ -62,28 +59,19 @@ function NavSearch() {
               />
             </WrapperG>
           )}
-        </Wrapper>
+        </div>
       ) : (
         <Nav>
           <div onClick={Toggle}>
-            <Input
-              placeholder="Select Location"
-              disabled
-              onClick={() => setSearchActive(true)}
-            />
-            <Input
-              placeholder="Add Guests"
-              disabled
-              onClick={() => setSearchActive(true)}
-            />
+            <Input placeholder="Select Location" disabled value={location} />
+            <Input placeholder="Add Guests" disabled />
           </div>
           <Button>
             <MdSearch size={35} style={{ color: '#eb5757' }} />
           </Button>
         </Nav>
       )}
-      <div className="backdrop" onClick={() => setSearchActive(false)}></div>
-    </div>
+    </>
   );
 }
 

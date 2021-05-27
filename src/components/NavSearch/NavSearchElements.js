@@ -4,7 +4,6 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-left: auto; */
 
   cursor: pointer;
   box-shadow: 0 1px 6px rgb(0 0 0 / 10%);
@@ -30,7 +29,7 @@ export const Input = styled.input`
   border: 0;
   border-right: 1px solid #f2f2f2;
   font-size: 0.8rem;
-width: 8.5rem;
+  width: 8.5rem;
   flex-direction: column;
   color: #828282;
   font-weight: 600;
@@ -88,59 +87,3 @@ export const Button = styled.button`
       align-items: center;
     `}
 `;
-
-// export const Font = styled.h4`
-//   font-family: Muli;
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 0.875rem;
-//   line-height: 1.125rem;
-//   padding: 1rem;
-//   color: #bdbdbd;
-//   border-right: 1px solid #f2f2f2;
-
-//   ${(props) =>
-//     props.expandFont &&
-//     css`
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       font-family: Muli;
-//       font-style: normal;
-//       font-weight: 500;
-//       font-size: 0.875rem;
-//       line-height: 1.125rem;
-//       padding: 1rem;
-//       color: #bdbdbd;
-//       border-right: 1px solid #f2f2f2;
-//     `}
-// `;
-
-// export const Location = styled.div`
-//   width: 50%;
-// `;
-
-// export const AddGuest = styled.div`
-//   width: 50%;
-// `;
-
-// export const SearchEx = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: #eb5757;
-//   color: #ffffff;
-// `;
-
-// export const TopNavText = styled.div`
-//   font-size: 0.7rem;
-//   color: #333;
-//   font-weight: 700;
-//   white-space: nowrap;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-// `;
-
-// export const SearchText = styled.div`
-//   color: #ffffff;
-// `;
