@@ -29,7 +29,7 @@ export const Input = styled.input`
   border: 0;
   border-right: 1px solid #f2f2f2;
   font-size: 0.8rem;
-width: 8.5rem;
+  width: 8.5rem;
   flex-direction: column;
   color: #828282;
   font-weight: 600;
