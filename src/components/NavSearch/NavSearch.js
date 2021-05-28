@@ -63,8 +63,16 @@ function NavSearch() {
       ) : (
         <Nav>
           <div onClick={Toggle}>
-            <Input placeholder="Select Location" disabled value={location} />
-            <Input placeholder="Add Guests" disabled />
+            <Input
+              placeholder="Select Location"
+              disabled
+              defaultValue={location}
+            />
+            <Input
+              placeholder="Add Guests"
+              disabled
+              defaultValue={`${adult + child} Guests `}
+            />
           </div>
           <Button>
             <MdSearch size={35} style={{ color: '#eb5757' }} />
