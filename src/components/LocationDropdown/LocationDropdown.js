@@ -11,10 +11,10 @@ function LocationDropdown({ setLocation }) {
   return (
     <>
       <Wrapper>
-        {Location.map((location, index) => (
+        {Location.map((location, id) => (
           <div>
             <UL onHover>
-              <li key={index} onClick={() => setLocation(location)}>
+              <li key={id} onClick={() => setLocation(location)}>
                 <MdPlace /> {location}
               </li>
             </UL>
