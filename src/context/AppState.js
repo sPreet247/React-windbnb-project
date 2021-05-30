@@ -1,7 +1,7 @@
 import AppContext from './AppContext';
 
 import { useState } from 'react';
-
+import StayData from '../Data/Data';
 const AppState = (props) => {
   const [location, setLocation] = useState('Location');
   const [count, setCount] = useState(0);
@@ -9,7 +9,7 @@ const AppState = (props) => {
   const [adult, setAdult] = useState(0);
   const [child, setChild] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-
+  let filterData = StayData.filter((item) => {});
   return (
     <AppContext.Provider
       value={{
