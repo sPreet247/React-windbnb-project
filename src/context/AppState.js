@@ -13,6 +13,8 @@ const AppState = (props) => {
   return (
     <AppContext.Provider
       value={{
+        StayData,
+        filterData,
         location,
         setLocation,
         count,
