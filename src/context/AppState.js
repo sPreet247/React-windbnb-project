@@ -9,7 +9,9 @@ const AppState = (props) => {
   const [adult, setAdult] = useState(0);
   const [child, setChild] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-  let filterData = StayData.filter((item) => {});
+  let filterData = StayData.filter((item) => {
+    return item.city;
+  });
   return (
     <AppContext.Provider
       value={{
