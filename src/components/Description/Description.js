@@ -11,8 +11,10 @@ import {
 } from './DescriptionElements';
 import { AiFillStar } from 'react-icons/ai';
 import StayData from '../../Data/Data.json';
-
+import AppContext from '../../context/AppContext';
+import { useContext } from 'react';
 const Description = () => {
+  const { filterData } = useContext(AppContext);
   return (
     <>
       <div>
