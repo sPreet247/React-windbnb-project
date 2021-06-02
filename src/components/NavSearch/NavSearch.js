@@ -29,6 +29,7 @@ function NavSearch() {
   const Open = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <>
       {navExpand ? (
